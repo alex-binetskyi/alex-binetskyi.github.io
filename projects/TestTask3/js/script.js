@@ -24,12 +24,9 @@ function testWebP(callback) {
   }
 });
 ;
-$(function(){
-
-  $('.some_link').on('click', function(e){
-    $('html,body').stop().animate({ scrollTop: $('#some_point').offset().top }, 1000);
-    e.preventDefault();
-  });
-
-  });
+$("body").on('click', '[href*="#"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
+});
 ;
