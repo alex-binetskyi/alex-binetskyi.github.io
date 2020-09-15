@@ -143,6 +143,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.webp .page-header__phone-link::before {
+  background-image: url("../img/icon-phone.webp");
+}
+
 .page-header__phone-list {
   margin: 0;
   padding: 0;
@@ -160,6 +164,10 @@ img {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+.webp .banner {
+  background-image: url("../img/background-banner.webp");
 }
 
 .banner__content-container {
@@ -266,6 +274,10 @@ img {
   cursor: pointer;
 }
 
+.webp .banner__button-down {
+  background-image: url("../img/arrow-down.webp");
+}
+
 .about {
   margin-bottom: 130px;
 }
@@ -308,6 +320,10 @@ img {
   margin: 0;
 }
 
+.webp .about__info-item--address::before {
+  background-image: url("../img/marker-map-about-info.webp");
+}
+
 .about__info-item--contacts {
   position: relative;
   padding: 35px 75px;
@@ -331,6 +347,10 @@ img {
 
 .about__info-item--contacts p {
   margin: 0;
+}
+
+.webp .about__info-item--contacts::before {
+  background-image: url("../img/user-about-info.webp");
 }
 
 .about__info-item--description {
@@ -494,6 +514,22 @@ img {
   background-image: url("../img/arrow-left-green.png");
 }
 
+.webp .about__card-link::before {
+  background-image: url("../img/marker-map-about.webp");
+}
+
+.webp .about__card-link:hover {
+  background-image: url("../img/background-about-card.webp");
+}
+
+.webp .about__card-link:hover::before {
+  background-image: url("../img/steps-about.png");
+}
+
+.webp .about__card-link:hover .about__card-more {
+  background-image: url("../img/arrow-left-green.webp");
+}
+
 .about__card-more {
   position: relative;
   display: block;
@@ -518,6 +554,10 @@ img {
   background-position: center;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.webp .about__card-more::after {
+  background-image: url("../img/arrow-left-white.webp");
 }
 
 .info {
@@ -621,6 +661,10 @@ img {
   background-size: 21px 21px;
 }
 
+.webp .info__link {
+  background-image: url("../img/play.webp");
+}
+
 .info__link-description {
   grid-area: link-description;
   -webkit-box-sizing: border-box;
@@ -645,6 +689,10 @@ img {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.webp .info__picture-container {
+  background-image: url("../img/info-background.webp");
 }
 
 .apartments-plan {
@@ -935,6 +983,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.webp .callback__background-container {
+  background-image: url("../img/background-form.webp");
+}
+
 .callback__text-container {
   padding-left: 80px;
 }
@@ -1183,6 +1235,18 @@ img {
 
 .page-footer__social-link:active {
   opacity: 0.7;
+}
+
+.webp .page-footer__social-link--facebook {
+  background-image: url("../img/facebook-icon.webp");
+}
+
+.webp .page-footer__social-link--instagram {
+  background-image: url("../img/instagram-icon.webp");
+}
+
+.webp .page-footer__social-link--telegram {
+  background-image: url("../img/telegram-icon.webp");
 }
 
 .page-footer__copyright {
