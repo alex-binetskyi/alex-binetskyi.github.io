@@ -1,0 +1,29 @@
+//Класс, чтобы доступно скрыть элементы.
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+//Стили body.
+
+body {
+  min-width: 320px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #000000;
+}
+
+// Общие классы, используемые в проекте.
+
+img {
+  max-width: 100%;
+  height: auto;
+}

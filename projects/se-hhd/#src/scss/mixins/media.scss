@@ -1,0 +1,21 @@
+//Примеси на ширину экрана.
+
+@mixin media-custom-min($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-custom-max($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+//Примеси на ретину.
+
+@mixin retin-screen {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
