@@ -7,6 +7,10 @@
     left: 65px;
     color: rgba(248, 248, 248, 0.5);
   }
+
+  @include media-mobile {
+    padding-top: 20px;
+  }
 }
 
 .contact-us__container {
@@ -22,18 +26,34 @@
   font-size: 32px;
   line-height: 48px;
   text-align: center;
-  color: #000000;
+
+  @include media-mobile {
+    order: 1;
+    margin: 0 0 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contact-us__links-wrapper {
   width: 200px;
+
+  @include media-mobile {
+    order: 3;
+    width: auto;
+  }
 }
 
 .contact-us__data {
   display: grid;
-  gap: 50px 0;
   margin-bottom: 60px;
+  gap: 50px 0;
   font-style: normal;
+
+  @include media-mobile {
+    margin-bottom: 24px;
+    gap: 24px 0;
+  }
 }
 
 
@@ -61,6 +81,18 @@
 
     &:active {
       opacity: 0.6;
+    }
+  }
+
+  @include media-mobile {
+    b {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .contact-us__link {
+      font-size: 13px;
+      line-height: 16px;
     }
   }
 }
@@ -94,16 +126,30 @@
 
 .contact-us__form {
   width: 455px;
+
+  @include media-mobile {
+    order: 2;
+    margin-bottom: 50px;
+    width: 100%;
+  }
 }
 
 .contact-us__field-container {
   position: relative;
   margin: 0 0 42px;
+
+  @include media-mobile {
+    margin: 0 0 20px;
+  }
 }
 
 .contact-us__comment-container {
   position: relative;
   margin: 0 0 50px;
+
+  @include media-mobile {
+    margin: 40px 0;
+  }
 }
 
 .contact-us__label {
@@ -118,6 +164,13 @@
   &--comment {
     top: 0;
     left: 20px;
+  }
+
+  @include media-mobile {
+    bottom: 9px;
+    left: 10px;
+    font-size: 13px;
+    line-height: 19px;
   }
 }
 
@@ -139,9 +192,13 @@
 
   &::placeholder {
     font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
     color: rgba(203, 203, 203, 0.5);
+  }
+
+  @include media-mobile {
+    padding: 0 10px 7px 60px;
+    font-size: 13px;
+    line-height: 19px;
   }
 }
 
@@ -159,9 +216,14 @@
 
   &::placeholder {
     font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
     color: rgba(203, 203, 203, 0.5);
+  }
+
+  @include media-mobile {
+    margin: 0;
+    padding: 0 10px 7px 79px;
+    font-size: 13px;
+    line-height: 19px;
   }
 }
 
@@ -188,5 +250,9 @@
     background-color: #ffffff;
     border-color: #999999;
     outline: none;
+  }
+
+  @include media-mobile {
+    margin: 0 auto;
   }
 }

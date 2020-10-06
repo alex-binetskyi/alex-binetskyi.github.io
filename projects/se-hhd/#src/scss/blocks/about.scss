@@ -8,6 +8,10 @@
     left: 53px;
     color: #ffffff;
   }
+
+  @include media-mobile {
+    padding: 0;
+  }
 }
 
 .about__container {
@@ -15,8 +19,6 @@
 }
 
 .about__text {
-  margin: 0 0 40px;
-
   &:nth-last-child(1) {
     margin-bottom: 0;
   }

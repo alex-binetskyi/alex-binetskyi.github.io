@@ -12,4 +12,12 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  @include media-mobile {
+    &::before {
+      top: 15%;
+      left: 20px;
+      font-size: 150px;
+    }
+  }
 }

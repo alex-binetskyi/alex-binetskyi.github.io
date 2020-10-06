@@ -1,9 +1,17 @@
 .send-cv {
+  @include background-text;
   background-color: rgba(248, 248, 248, 0.5);
-}
 
-.send-cv__lead {
-  margin: 0 0 35px;
+  &::before {
+    top: 55px;
+    left: 60px;
+    color: #ffffff;
+  }
+
+  @include media-mobile {
+    align-items: flex-end;
+    padding: 0 0 56px;
+  }
 }
 
 .send-cv__list {
@@ -41,11 +49,15 @@
 }
 
 .send-cv__text-link {
-  display: inline-block;
-  padding-bottom: 2px;
   color: #000000;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+
+  span {
+    display: inline-block;
+    border-bottom: 1px solid #333333;
+    transition: all 0.3s ease-in-out;
+  }
 
   svg {
     padding-left: 8px;
@@ -58,6 +70,10 @@
   &:hover {
     color: #2d76b0;
 
+    span {
+      border-bottom-color: #2d76b0;
+    }
+
     path {
       fill: #2d76b0;
     }
@@ -65,6 +81,10 @@
 
   &:active {
     color: #1d5580;
+
+    span {
+      border-bottom-color: #1d5580;
+    }
 
     path {
       fill: #1d5580;
