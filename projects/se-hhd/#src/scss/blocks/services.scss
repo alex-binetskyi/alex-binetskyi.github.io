@@ -1,0 +1,27 @@
+.services {
+  padding-top: 12.2vh;
+}
+
+.services__list {
+  @include list-reset;
+}
+
+
+.services__text {
+  margin: 0;
+
+  strong,
+  span {
+    display: block;
+  }
+
+  strong {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  span {
+    margin-left: 170px;
+  }
+}

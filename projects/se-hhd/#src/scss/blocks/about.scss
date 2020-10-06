@@ -1,0 +1,23 @@
+.about {
+  @include background-text;
+  padding-top: 12.2vh;
+  background-color: rgba(248, 248, 248, 0.5);
+
+  &::before {
+    top: 40px;
+    left: 53px;
+    color: #ffffff;
+  }
+}
+
+.about__container {
+  width: 775px;
+}
+
+.about__text {
+  margin: 0 0 40px;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}

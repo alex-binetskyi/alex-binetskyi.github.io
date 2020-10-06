@@ -15,10 +15,17 @@
 
 //Стили body.
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 320px;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
   color: #000000;
+  background-color: #ffffff;
 }
 
 // Общие классы, используемые в проекте.
@@ -26,4 +33,28 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+// Кнопка наверх.
+
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 24px;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+
+  &:hover path {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

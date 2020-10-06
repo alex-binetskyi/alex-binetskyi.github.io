@@ -4,5 +4,16 @@
 @import "mixins/fonts-include";
 @import "mixins/media";
 @import "mixins/reset";
+@import "mixins/background-text";
 @import "other/fonts";
 @import "other/other";
+@import "blocks/page-header";
+@import "blocks/page-section";
+@import "blocks/first-screen";
+@import "blocks/about";
+@import "blocks/services";
+@import "blocks/pricing";
+@import "blocks/send-request";
+@import "blocks/send-cv";
+@import "blocks/contact-us";
+@import "blocks/section-navigation";
